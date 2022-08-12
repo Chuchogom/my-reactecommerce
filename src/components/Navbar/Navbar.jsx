@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../../assets/logoShop.svg';
 import menu from '../../assets/menu.svg';
+import CartWidget from '../CartWidget/CartWidget'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -36,6 +37,7 @@ const Navbar = () => {
                         email@example.com
                     </li>
                     <li className="navbar-shopping-cart">
+                        <a href=""><CartWidget/></a>
                     </li>
                 </ul>
             </div>
