@@ -1,10 +1,10 @@
 import React from 'react'
 import Title from '../Title/Title'
 
-const ItemListaContainer = ({props}) => {
+const ItemListContainer = ({props}) => {
   return (
     <Title  greeting={'uShops'}/>
   )
 }
 
-export default ItemListaContainer
+export default ItemListContainer
