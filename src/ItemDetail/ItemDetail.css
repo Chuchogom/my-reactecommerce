@@ -38,9 +38,6 @@
     transition: 0.5s;
 }
 
-.detail-card:hover .detail-image{
-    transform: rotate(-35deg);
-}
 
 .detail-card .detail-description{
     position: relative;
