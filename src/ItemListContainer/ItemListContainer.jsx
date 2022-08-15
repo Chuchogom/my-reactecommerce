@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import ItemCount from '../ItemCount/ItemCount'
 import Title from '../Title/Title'
 import ItemList from '../ItemList/ItemList'
 
@@ -34,14 +33,10 @@ const ItemListContainer = ({props}) => {
   }, [categoryId])
   
 
-const addItem = (quantity) => {
-  console.log(`You bought ${quantity} units`);
-}
-
   return (
     <>
       <Title  greeting={'Alien Shop'}/>
-      <ItemCount initial={1} stock={7} addItem={addItem} />
+      
       <ItemList data = {data} />
     </>
   )
