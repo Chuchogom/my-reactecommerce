@@ -15,11 +15,11 @@ const CartProvider = ( {children} ) => {
 
 
   return (
-    <CartContext.Provider value=[{
+    <CartContext.Provider value={{
         cleanCart, 
         itemInCart,
         removeCart
-    }]>
+    }}>
         {children}
     </CartContext.Provider>
   )
