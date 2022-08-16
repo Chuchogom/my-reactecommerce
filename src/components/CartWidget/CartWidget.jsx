@@ -1,10 +1,8 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import './CartWidget.css'
 
 
-const CartWidget = () => {
-
-
+ export const CartWidget = () => {
 
   return (
     <>
