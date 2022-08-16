@@ -4,7 +4,7 @@ import ItemCount from '../ItemCount/ItemCount'
 import { Link } from 'react-router-dom'
 import './ItemDetail.css'
 
-const ItemDetail = ({ data }) => {
+export const ItemDetail = ({ data }) => {
 
 
     const [cartView, setCartView] = useState(false)
@@ -30,7 +30,7 @@ const ItemDetail = ({ data }) => {
                         {
                             cartView
                             ? <Link to='/cart' > Go to Cart </Link>
-                            :<ItemCount initial={1} stock={7} addItem={addItem} />
+                            :<ItemCount initial={1} stock={5} addItem={addItem} />
                         }
                     </div>
                 </div>
