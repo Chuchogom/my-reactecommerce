@@ -1,18 +1,24 @@
 .Item {
-	width: 240px;
+	display: grid;
+	grid-template-columns: 20% 20% 20%;
+	grid-template-rows: 20% 20% 20%;
 }
+
 .Item img {
-	width: 240px;
-	height: 240px;
+	grid-column-start: 1;
+	width: 230px;
+	height: 260px;
 	border-radius: 20px;
 	object-fit: cover;
+} 
+
+.Item p{
+	position: absolute;
+	display:flex ;
+	width: 100px;
+	background-color: aliceblue;
 }
-.product-info {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 12px;
-}
+/*
 .product-info figure {
 	margin: 0;
 }
@@ -31,7 +37,7 @@
 	margin-top: 0;
 	margin-bottom: 0;
 	color: lightpink;
-}
+} */
 @media (max-width: 640px) {
 	.cards-container {
 		grid-template-columns: repeat(auto-fill, 140px);

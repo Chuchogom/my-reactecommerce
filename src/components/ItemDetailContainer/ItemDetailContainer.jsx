@@ -9,7 +9,7 @@ import { useParams } from 'react-router-dom'
 
 export const ItemDetailContainer = () => {
 
-  const [data, setData] = useState([]);
+  const [data, setData] = useState({});
   const {detailId} = useParams();
 
   useEffect(() => {
