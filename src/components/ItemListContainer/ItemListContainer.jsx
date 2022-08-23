@@ -30,10 +30,10 @@ export const ItemListContainer = ({props}) => {
 
   return (
     <>
-      <div className="Item-list_container">
-        <Title  greeting={'Alien Shop'}/>
-        <ItemList data = {data} />
-      </div>
+      <Title  greeting={'Alien Shop'}/>
+        <div className="Item-list_container">
+          <ItemList data = {data} />
+        </div>
     </>
   )
 }
