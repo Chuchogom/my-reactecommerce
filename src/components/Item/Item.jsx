@@ -7,8 +7,10 @@ const Item = ({ info }) => {
 
     return (
         <Link to={`/item-detail/${info.id}`} className='Item'>
-            <img src={info.image} alt="" />
-            <p className='product-info'> {info.title} </p>
+            <div className="Item-container animate__animated animate__backInDown" >
+                <img src={info.image} alt="" />
+                <h3 className='Item-title'> {info.title} </h3>
+            </div>
         </Link>
     )
 }

@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore'
 import Title from '../Title/Title'
 import ItemList from '../ItemList/ItemList'
+import './ItemListContainer.css'
 
 
 
@@ -29,9 +30,10 @@ export const ItemListContainer = ({props}) => {
 
   return (
     <>
-      <Title  greeting={'Alien Shop'}/>
-      
-      <ItemList data = {data} />
+      <div className="Item-list_container">
+        <Title  greeting={'Alien Shop'}/>
+        <ItemList data = {data} />
+      </div>
     </>
   )
 }

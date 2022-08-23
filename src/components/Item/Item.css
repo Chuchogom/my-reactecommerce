@@ -1,52 +1,31 @@
 .Item {
-	display: grid;
-	grid-template-columns: 20% 20% 20%;
-	grid-template-rows: 20% 20% 20%;
+	padding: 0 50px 40px;
 }
 
-.Item img {
-	grid-column-start: 1;
-	width: 230px;
-	height: 260px;
-	border-radius: 20px;
-	object-fit: cover;
-} 
+.Item .Item-title{
+	padding-bottom: 20px;
+	text-align: center;
+	color: black;
+}
 
-.Item p{
-	position: absolute;
-	display:flex ;
-	width: 100px;
-	background-color: aliceblue;
+.Item .Item-container{
+	display: inline-block;
+	padding-left: 10px;
+	max-width: 20%;
+	margin-bottom: 50px;
+	box-shadow: 8px 15px 11px 3px rgba(17,181,181,0.75);
 }
-/*
-.product-info figure {
-	margin: 0;
+
+.Item-container img{
+	width: 100%;
 }
-.product-info figure img {
-	width: 35px;
-	height: 35px;
+
+.Item-container:hover{
+	max-width: 21%;
 }
-.product-info div p:nth-child(1) {
-	font-weight: bold;
-	font-size: 16px;
-	margin-top: 0;
-	margin-bottom: 4px;
-}
-.product-info div p:nth-child(2) {
-	font-size: 14px;
-	margin-top: 0;
-	margin-bottom: 0;
-	color: lightpink;
-} */
+
 @media (max-width: 640px) {
-	.cards-container {
-		grid-template-columns: repeat(auto-fill, 140px);
-	}
-	.Item {
-		width: 140px;
-	}
-	.Item img {
-		width: 140px;
-		height: 140px;
+	.Item-title {
+		font-size: 12px;
 	}
 }
