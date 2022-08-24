@@ -1,5 +1,4 @@
 .Item-list_container{
-    background-image: conic-gradient(#553c9a, #ee4b2b, #2c00cb);
     display: grid;
 	grid-template-columns: repeat(auto-fill, 240px);
 	gap: 26px;

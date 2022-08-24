@@ -1,0 +1,43 @@
+
+.mobile-menu{
+    display: grid;
+    position: absolute;
+    z-index: 2;
+    background-color: aliceblue;
+    left: 0;
+    top: 60px;
+    width: 640px;
+    height: 915px;
+}
+.mobile-menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.mobile-menu ul{
+    list-style: none;
+    padding: 25px;
+}
+
+.mobile-menu ul li{
+    margin-bottom: 24px;
+}
+.email{
+    font-size: 14px;
+    font-weight: 300 !important;
+}
+.mobile-menu .sing-out{
+    color: blue;
+    font-size: 14px;
+}
+.mobile-menu ul:nth-child(3){
+    position: absolute;
+    bottom: 0;
+}
+
+@media (min-width:640px) {
+    .mobile-menu{
+        display: none;
+    }
+}

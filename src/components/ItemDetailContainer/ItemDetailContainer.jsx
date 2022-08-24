@@ -21,7 +21,7 @@ export const ItemDetailContainer = () => {
 
 
   return (
-    <ItemDetail data={data} />
+      <ItemDetail data={data} />
   )
 }
 

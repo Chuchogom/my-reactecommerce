@@ -9,6 +9,7 @@
 	top: 60px;
 	right: 50px;
 	background-color: rgba(8,183,174,0.6);
+	z-index: 2;
 }
 .Menu ul {
 	list-style: none;
@@ -29,10 +30,10 @@ font-size: 20px;
 }
 .Menu ul li:last-child {
 	padding-top: 20px;
-	border-top: 1px solid gray;
+	border-top: 1px solid rgb(0, 0, 0);
 }
 .Menu ul li:last-child a {
-	color: gray;
+	color: rgb(0, 0, 0);
 	font-size: 14px;
 }
 .Menu ul li a {
@@ -42,3 +43,8 @@ font-size: 20px;
 	display: inline-block;
 }
 
+@media (max-width:640px) {
+	.Menu{
+		display: none;
+	}	
+}

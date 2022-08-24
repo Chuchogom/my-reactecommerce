@@ -2,15 +2,17 @@ import React, { useState } from 'react'
 import logo from '../../assets/logoShop.svg';
 import menu from '../../assets/menu.svg';
 import CartWidget from '../CartWidget/CartWidget'
-import MyOrder from '../MyOrder/MyOrder';
+import Cart from '../Cart/Cart';
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
 import Menu from '../Menu/Menu';
+import MenuMobile from '../MenuMobile/MenuMobile';
 
 const Navbar = () => {
 
     const [toggle, setToggle] = useState(false);
     const [toggleOrders, setToggleOrders] = useState(false);
+    const [toggleMobile, setToggleMobile] = useState(false);
 
     const handleToggle = () => {
 		setToggle(!toggle);
@@ -18,8 +20,8 @@ const Navbar = () => {
 
     return (
         <nav>
-            <img src={menu} alt="menu" className="menu" />
-            <div className="navbar-left">
+            <img src={menu} alt="menu" className="menu" onClick={() => setToggleMobile (!toggleMobile)}/>
+            <div className="navbar-left" >
                 <img src={logo} alt="logo" className="nav-logo" />
                 <ul>
                     <li>
@@ -45,14 +47,15 @@ const Navbar = () => {
                         email@example.com
                     </li>
                     <li className="navbar-shopping-cart" 
-						// onClick={() => setToggleOrders (!toggleOrders)}
+						onClick={() => setToggleOrders (!toggleOrders)}
                         >
                         <CartWidget/>
                     </li>
                 </ul>
             </div>
             {toggle && <Menu/>}
-            {/* {toggleOrders && <MyOrder/>} */}
+            {toggleOrders && <Cart/>}
+            {toggleMobile && <MenuMobile/>}
         </nav>
     )
 }
