@@ -3,6 +3,8 @@ import React from 'react'
 import { useCartContext } from '../../context/CartContext'
 import { Link } from 'react-router-dom'
 import ItemCart from '../ItemCart/ItemCart';
+import './Cart.css'
+import arrow from '../../assets/arrow.svg'
 
 
 const Cart = () => {
@@ -30,22 +32,32 @@ const Cart = () => {
 
   if (cart.length === 0) {
     return (
-      <>
-        <p>Empty car</p>
-        <Link to='/'>Don't wait, choose a good product</Link>
-      </>
+      <aside className='cart-order'>
+        <img className='arrow' src={arrow} alt="arrow" />
+        <h3 className='title-cart'>My Cart</h3>
+        <div className="empty-order">
+          <p>Empty car</p>
+          <Link to='/' className='link'>Don't wait, choose a good product</Link>
+        </div>
+      </aside>
     );
   }
 
   return (
     <>
       {
-        cart.map(product => <ItemCart key={product.id} product={product} />)
+        cart.map(product => 
+        <ItemCart key={product.id} 
+        product={product} />)
       }
-      <p>
-        Total: {totalPrice()}
-      </p>
-      <button onClick={handleClick}>Buy</button>
+      <div className='cart-order'>
+        <div className='empty-order'>
+          <p className=''>
+            Total: {totalPrice()}
+          </p>
+        </div>
+        <button onClick={handleClick}>Buy</button>
+      </div>
     </>
   )
 }

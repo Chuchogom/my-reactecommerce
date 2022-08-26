@@ -1,6 +1,7 @@
 import React from 'react'
 import './CartWidget.css'
 import { useCartContext } from '../../context/CartContext'
+import shoppingCart from '../../assets/shoppingCart.svg'
 
 
  export const CartWidget = () => {
@@ -9,7 +10,7 @@ import { useCartContext } from '../../context/CartContext'
 
   return (
     <>
-      <i className="ri-shopping-cart-fill" />
+      <img src={shoppingCart} alt="" />
       <span>{totalProducts() || ''}</span>
     </>
   )
