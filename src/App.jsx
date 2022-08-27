@@ -6,6 +6,8 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import Cart from './components/Cart/Cart';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CartProvider from './context/CartContext';
+import MyAccount from './components/MyAccount/MyAccount';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -22,7 +24,9 @@ function App() {
               <Route path='/cart' element ={ <Cart/> } />
               <Route path='/login' element ={ <ItemListContainer/> } />
               <Route path='*' element ={ <ItemListContainer/> } />
+              <Route path='/my-account' element={<MyAccount/>} />
             </Routes>
+            <Footer/>
           </CartProvider>
       </BrowserRouter>
     </>
