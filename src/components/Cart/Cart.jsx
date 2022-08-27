@@ -44,21 +44,20 @@ const Cart = () => {
   }
 
   return (
-    <>
+    <div className='cart-order'>
+      <img className='arrow' src={arrow} alt="arrow" />
+      <h3 className='title-cart'>My Cart</h3>
       {
-        cart.map(product => 
-        <ItemCart key={product.id} 
-        product={product} />)
+        cart.map(product =>
+          <ItemCart key={product.id}
+            product={product} />)
       }
-      <div className='cart-order'>
-        <div className='empty-order'>
-          <p className=''>
-            Total: {totalPrice()}
-          </p>
+        <div className="total-order">
+          <p>Total:</p>
+          <p>$ {(totalPrice()).toFixed(2)}</p>
         </div>
-        <button onClick={handleClick}>Buy</button>
-      </div>
-    </>
+        <button onClick={handleClick} className='cart-button'>Buy</button>
+    </div>
   )
 }
 
