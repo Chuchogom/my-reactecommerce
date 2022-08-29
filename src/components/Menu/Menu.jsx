@@ -15,10 +15,10 @@ const Menu = () => {
 					<NavLink to='/my-orders' onClick={() => setToggleMenu.remove (toggleMenu)} >My Orders</NavLink>
 				</li>
 				<li>
-					<NavLink to='/my-account' onClick={() => setToggleMenu.remove (toggleMenu)}>My account</NavLink>
+					<NavLink to='/login' onClick={() => setToggleMenu.remove (toggleMenu)}>Log in</NavLink>
 				</li>
 				<li>
-					<NavLink to='/login' onClick={() => setToggleMenu.remove (toggleMenu)}>Sign out</NavLink>
+					<NavLink to='/sign-out' onClick={() => setToggleMenu.remove (toggleMenu)}>Sign out</NavLink>
 				</li>
 			</ul>
 		</div>

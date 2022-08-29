@@ -29,7 +29,7 @@ const MenuMobile = () => {
                   <NavLink to='/my-orders' onClick={() => setToggleMobile.remove (toggleMobile)}>My orders</NavLink>
               </li>
               <li>
-                  <NavLink to='/my-account' onClick={() => setToggleMobile.remove (toggleMobile)}>My account</NavLink>
+                  <NavLink to='/login' onClick={() => setToggleMobile.remove (toggleMobile)}>Log in</NavLink>
               </li>
               <li>
                   <NavLink to='/' className="email" onClick={() => setToggleMobile.remove (toggleMobile)}>example@email.com</NavLink>

@@ -9,9 +9,9 @@ const Footer = () => {
     <footer className="footer section">
         <div className="footer__container container">
             <div className="footer__content">
-                <a href className="footer__logo">
-                <i class="ri-aliens-fill"></i> Alien Shop
-                </a>
+                <Link to='/' className="footer__logo">
+                <i className="ri-aliens-fill"></i> Alien Shop
+                </Link>
                 <p className="footer__description">
                     The best clothes of <br />
                     the most recognized brands in <br />
@@ -61,15 +61,15 @@ const Footer = () => {
                     Follow us
                 </h3>
                 <ul className="footer__social">
-                    <Link to='https://www.facebook.com/' target="_blank" className="footer__social-link">
+                    <a href='https://www.facebook.com/' target='_blank' rel='noreferrer' className="footer__social-link">
                         <i className="ri-facebook-fill" />
-                    </Link>
-                    <Link to='https://www.instagram.com/' target="_blank" className="footer__social-link">
+                    </a>
+                    <a href='https://www.instagram.com/' target='_blank' rel='noreferrer' className="footer__social-link">
                         <i className="ri-instagram-fill" />
-                    </Link>
-                    <Link to='https://twitter.com/' target="_blank" className="footer__social-link">
+                    </a>
+                    <a href='https://twitter.com/' target='_blank' rel='noreferrer' className="footer__social-link">
                         <i className="ri-twitter-fill" />
-                    </Link>
+                    </a>
                 </ul>
             </div>
         </div>

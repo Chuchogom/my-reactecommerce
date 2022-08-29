@@ -23,6 +23,7 @@
     font-weight: 600;
     margin-bottom: 1.25rem;
     transition: .3s;
+    text-decoration: none;
 }
 
 .footer__logo i {
